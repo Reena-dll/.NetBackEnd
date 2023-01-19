@@ -33,3 +33,37 @@ Build edilip push edilmiştir. Kesinlikle hatası yoktur.
 Üzerinde çok test yapmaya vaktim yoktu, bir kaç bulgu çıkma ihtimali vardır.
 Herhangi bir bug çıkması halinde düzeltilebilir.
 
+<br/>
+<br/>
+<br/>
+
+Örnek TimeSpan girişi. Saat değerleri TimeSpan ile tutuldu.
+
+{
+  "name": "Enoca",
+  "status": true,
+  "orderStartDate": "09:30:00.0000000",
+  "orderFinishDate":"20:30:00.0000000"
+}
+
+Örnek Dynamic Search Girişi : 
+
+{
+  "sort": [
+    {
+      "field": "Name",
+      "dir": "asc"
+    }
+  ],
+  "filter": {
+    "field": "Name",
+    "operator": "eq",
+    "value": "Iphone 11",
+    "logic": "or",
+    "filters": [
+    { "field": "price",
+    "operator": "gte",
+    "value": "30000"}
+    ]
+  }
+}
